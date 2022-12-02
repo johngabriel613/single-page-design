@@ -1,0 +1,149 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 100%;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+.container{
+    width: min(100%, 1200px);
+    padding: 0 1rem;
+    margin: auto;
+    background: beige;
+    margin-bottom: 20px;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas: 
+    'one one'
+    'two three'
+    'four four'
+    'five five'
+    'six six';
+    grid-auto-columns: 1fr;
+}
+
+.grid-card{
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.grid-card:hover {
+    filter: brightness(.8);
+}
+
+
+.grid-card img{
+    justify-self: right;
+    position: relative;
+}
+
+.grid-card:nth-child(1){
+    background: #755cde;
+    grid-area: one;
+}
+
+.grid-card:nth-child(2){
+    background: #f5a560;
+    grid-area: two;
+}
+
+.grid-card:nth-child(3){
+    background: #f39d9e;
+    grid-area: three;
+}
+
+.grid-card:nth-child(4){
+    background: #ea7564;
+    grid-area: four;
+}
+
+.grid-card:nth-child(5){
+    background: #62c4b7;
+    grid-area: five;
+}
+
+.grid-card:nth-child(6){
+    background: #55204a;
+    grid-area: six;
+}
+
+
+.swiper-slide{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 270px !important;
+    aspect-ratio: 3/2;
+    cursor: pointer;
+}
+
+.swiper-slide:hover img{
+    scale: 1.2;
+    filter: brightness(.5);
+}
+
+.swiper-slide img{
+    width: 100%;
+    transition: .3s ease;
+}
+
+.nav-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 50px;
+}
+
+
+
+.next-btn, .prev-btn{
+    background: #121212;
+    padding: 25px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 520px){
+    .grid{
+        grid-template-areas: 
+        'one one two three'
+        'one one four four'
+        'five five six six';
+    }
+
+    .swiper-slide{
+        width: 425px !important;
+    }
+}
+
+@media screen and (min-width: 870px){
+    .grid{
+        grid-template-areas: 
+        'one one two three five five'
+        'one one four four six six';
+    }
+
+    .swiper-slide{
+        width: 550px !important;
+    }
+}
