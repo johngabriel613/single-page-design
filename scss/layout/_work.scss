@@ -1,0 +1,78 @@
+@use '../util/' as u;
+
+.work{
+    padding: 100px 0 20px;
+    &__wrapper{
+        &__title{
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 50px;
+        }
+
+        .swiper{
+            .swiper-wrapper{
+                .swiper-slide{
+                    border-radius: 10px;
+                    overflow: hidden;
+                    width: 270px !important;
+                    aspect-ratio: 3/2;
+                    cursor: pointer;
+
+                    &:hover img{
+                        scale: 1.3;
+                        filter: brightness(.7);
+                    }
+
+                    img{
+                        width: 100%;
+                        transition: .3s ease;
+                    }
+                }
+            }
+
+            .swiper-nav{
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+                margin-top: 30px;
+
+                .prev-btn, .next-btn{
+                    display: flex;
+                    background: u.$primary;
+                    padding: 25px;
+                    border-radius: 50%;
+                    transition: .3s ease;
+                    cursor: pointer;
+
+                    &:hover{
+                        background: u.$card4;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:620px) {
+        &__wrapper{
+            .swiper{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        width: 420px !important;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:920px) {
+        &__wrapper{
+            .swiper{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        width: 570px !important;
+                    }
+                }
+            }
+        }
+    }
+}

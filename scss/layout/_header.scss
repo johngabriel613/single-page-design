@@ -1,0 +1,21 @@
+@use '../util/' as u;
+
+.header{
+    padding: 10px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: auto;
+        
+
+        a{
+            background: u.$primary;
+            color:#FFF;
+            padding: 13px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+    }
+}

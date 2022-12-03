@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Single Page Design</title>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
@@ -13,66 +13,114 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" ></script>
 </head>
 <body>
-    <div class="container">
-        <div class="grid">
-            <div class="grid-card">
-                <img src="assets/pattern-graphic-design.svg" alt="">
-                <p>Graphic Design</p>
+    <header class="header">
+        <div class="header__wrapper">
+            <img src="assets/logo.svg" alt="">
+            <a href="#">Free consultation</a>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="home__wrapper">
+            <div class="home__wrapper__text">
+                <h1>Design solutions made easy</h1>
+                <p>With over ten years of experience in various design disciplines, I'm your one-stop shop for your design needs.</p>
             </div>
-            <div class="grid-card">
-                <img src="assets/pattern-ui-ux.svg" alt="">
-                <p>UI/UX</p>
-            </div>
-            <div class="grid-card">
-                <img src="assets/pattern-apps.svg" alt="">
-                <p>Apps</p>
-            </div>
-            <div class="grid-card">
-                <img src="assets/pattern-illustrations.svg" alt="">
-                <p>Illustrations</p>
-            </div>
-            <div class="grid-card">
-                <img src="assets/pattern-photography.svg" alt="">
-                <p>Photography</p>
-            </div>
-            <div class="grid-card">
-                <img src="assets/pattern-motion-graphics.svg" alt="">
-                <p>Motion Graphics</p>
+            <div class="home__wrapper__grid">
+                <div class="home__wrapper__grid__card">
+                    <img src="assets/pattern-graphic-design.svg" alt="">
+                    <p>Graphic Design</p>
+                </div>
+                <div class="home__wrapper__grid__card">
+                    <img src="assets/pattern-ui-ux.svg" alt="">
+                    <p>UI/UX</p>
+                </div>
+                <div class="home__wrapper__grid__card">
+                    <img src="assets/pattern-apps.svg" alt="">
+                    <p>Apps</p>
+                </div>
+                <div class="home__wrapper__grid__card">
+                    <img src="assets/pattern-illustrations.svg" alt="">
+                    <p>Illustrations</p>
+                </div>
+                <div class="home__wrapper__grid__card">
+                    <img src="assets/pattern-photography.svg" alt="">
+                    <p>Photography</p>
+                </div>
+                <div class="home__wrapper__grid__card">
+                    <img src="assets/pattern-motion-graphics.svg" alt="">
+                    <p>Motion Graphics</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="carousel">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="assets/image-slide-1.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/image-slide-2.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/image-slide-3.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/image-slide-4.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="assets/image-slide-5.jpg" alt="">
-                </div>
+    <section class="about">
+        <div class="about__wrapper">
+            <div class="about__wrapper__hero">
+                <img src="assets/image-amy.webp" alt="">
             </div>
-            <div class="nav-wrapper">
-                <div class="prev-btn">
+            <div class="about__wrapper__text">
+                <h2>I'm Amy, and I'd love to work on your next project</h2>
+                <p>I love working with others to create beautiful design solutions. I've designed everything from brand illustrations to complete mobile apps. I'm also handy with a camera!</p>
+                <a href="#">Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="work">
+        <div class="work__wrapper">
+            <div class="work__wrapper__title">
+                <h2>My Work</h2>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/image-slide-1.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/image-slide-2.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/image-slide-3.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/image-slide-4.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/image-slide-5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-nav">
+                    <div class="prev-btn">
                     <img src="assets/icon-arrow-left.svg" alt="">
-                </div>
-                <div class="next-btn">
+                    </div>
+                    <div class="next-btn">
                     <img src="assets/icon-arrow-right.svg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+    </section>
 
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__wrapper__contact">
+                <div class="footer__wrapper__contact__text">
+                    <h2>Book a call with me</h2>
+                <p>I'd love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+                </div>
+                <a href="#">Free Consultation</a>
+            </div>
+            <div class="footer__wrapper__bottom">
+                <img src="assets/logo.svg" alt="">
+                <a href="#">Free Consultation</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
 <script>
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: "auto",

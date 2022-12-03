@@ -1,0 +1,64 @@
+@use '../util/' as u;
+
+.about{
+    padding: 100px 10px 20px;
+    &__wrapper{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        &__hero{
+            max-width: 500px;
+            img{
+                width: 100%;
+            }
+        }
+
+        &__text{
+            max-width: 600px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            gap: 1rem;
+
+            h2{
+                font-size: clamp(2.25rem, 1.3125rem + 3vw, 3rem);
+                line-height: 1.2;
+            }
+
+            p{
+                color: u.$secondary;
+                line-height: 1.75;
+            }
+
+            a{
+                background: u.$card4;
+                width: fit-content;
+                color:#FFF;
+                padding: 13px 30px;
+                border-radius: 50px;
+                font-weight: 600;
+                transition: .3s ease;
+
+                &:hover{
+                    background: u.$primary;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:620px) {
+        &__wrapper{
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__text{
+                place-items: baseline;
+                text-align: left;
+            }
+        }
+    }
+}
